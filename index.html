@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styleHome.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    
+    <title>Sintax World</title>
+</head>
+<body>
+    <header>
+        <img src="syntax_world_icon.png" alt="">
+        <a class="logo" href=""><li>Syntax World</li></a>
+
+        <nav class="botones">
+            <li class="BotonHeader">Info</li>
+            <li class="BotonHeader">Contactanos</li>
+            <li class="BotonHeader">Proyectos</li>
+            <li class="BotonHeader">Desarrollladores</li>
+        </nav>
+
+        <div id="sesion">
+            <a href=""><button>Iniciar sesion</button></a>
+        </div>
+    </header>
+    <nav class="contenedor">
+        
+        <div class="contenido">
+            <button id="boton_nombre"> &lt; &gt; Syntax World </button>   
+            <h1 class="titulo">Haz parte de nuestro equipo y <span class="texto_color_distinto">potencia</span> tu carrera</h1>
+            <p class="texto-contenido"><span>Syntax World</span> es un equipo de programadores unidos por su <span>pasión por el codigo y la innovacion</span>. Tenemos experiencia en varios <span>lenguajes y tecnologias</span>, colaboramos en proyectos compartidos, organizamos sesiones de aprendizaje y resolvemos desafíos reales de forma creativa. nuestra <span>fortaleza</span> radica en el trabajo en equipo y el intercambio constante de conocimientos para mantenerse a la <span>vanguardia</span>.</p>
+            <div id="botones_unirse_proyectos">
+                <button class="boton">Unete a nosotros</button>
+                <button class="boton">Proyectos</button>
+            </div>
+        </div>
+    </nav>
+    <h1>Proyectos</h1>
+    <nav class="contenedor_carrusel">
+            
+            <button id="prevBtn" class="slider-btn">&lt;</button>
+            <div class="contenedor_proyectos" id="slider">
+                
+                <div class="proyectos" data-index="0">
+                    <h2>Medicore</h2>
+                    <img src="proy1.png" alt="Proyecto 1">
+                    <p>Es una aplicacion de gestion de consultorio medico con bot de telegram integrado para atender pacientes y con una opcion en progreso de chat anonimo de pacientes con los doctores</p>
+                    <div class="botones_proyectos">
+                        <button>Ver más</button>
+                        <button>Repositorio</button>
+                    </div>
+                </div>
+                <div class="proyectos active" data-index="1">
+                    <h2>Medicore</h2>
+                    <img src="proy1.png" alt="Proyecto 1">
+                    <p>Es una aplicacion de gestion de consultorio medico con bot de telegram integrado para atender pacientes y con una opcion en progreso de chat anonimo de pacientes con los doctores</p>
+                    <div class="botones_proyectos">
+                        <button>Ver más</button>
+                        <button>Repositorio</button>
+                    </div>
+                </div>
+                <div class="proyectos" data-index="2">
+                    <h2>Medicore</h2>
+                    <img src="proy1.png" alt="Proyecto 1">
+                    <p>Es una aplicacion de gestion de consultorio medico con bot de telegram integrado para atender pacientes y con una opcion en progreso de chat anonimo de pacientes con los doctores</p>
+                    <div class="botones_proyectos">
+                        <button>Ver más</button>
+                        <button>Repositorio</button>
+                    </div>
+                </div>
+
+            
+            </div>
+            <button id="nextBtn" class="slider-btn">&gt;</button>
+    </nav>
+    
+    <script src="slider.js"></script>
+</body>
+</html>

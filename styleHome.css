@@ -1,0 +1,297 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body{
+            background-color: #1e1f23;
+
+
+}
+
+
+li, a, button {
+
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    color: aliceblue;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+
+}
+
+a:hover, li:hover, button:hover{
+    color: #0088a9;
+}
+
+header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 100px;
+    height: 100px;
+    background-color: #1e1f23;
+    z-index: 10; /* Aumenta el z-index */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    width: 100%;
+}
+
+header img{
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    border-radius: 15px;
+    border: solid 1.5px #ffffff;
+    box-shadow: rgb(255, 255, 255) 0px 0px 20px 0px;
+    transition: all 0.2s ease 0s;
+}
+
+
+header img:hover{
+    box-shadow: rgba(0, 0, 0, 0.597) 0px 4px 20px 1px;
+}
+
+.contenedor{
+
+    background-image: url("blob-scene-haikei.svg");
+    background-repeat: no-repeat;
+    background-size: cover;       
+    background-position: center; 
+    height: 800px;   
+    width: 100%;    
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+#boton_nombre{
+    border: #ffffff 1px solid;
+    background-color: transparent;
+    box-shadow: rgba(255, 255, 255, 0.3) 0px 4px 20px 2px;
+    margin-bottom:20px;
+    transition: all 0.3s ease 0s;
+}
+
+#boton_nombre:hover{
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgb(30, 30, 30) 0px 4px 20px 20px;
+    color: #1e1f23;
+    border: solid 1.5px #1e1f23;
+}
+
+.contenido{
+    align-items: center;
+    justify-items: center;
+    color: #ffffff;
+    width: 60%;
+    margin-top: 10.5%;
+    
+}
+
+.contenido h1{
+    color: #ffffff;
+    margin-bottom: 10%;
+    font-size: 44px;
+    text-align: center;
+    font-weight: 900;
+}
+
+span{
+    color: rgb(94, 157, 228);
+    font-weight: 900;
+}
+
+.texto-contenido{
+    line-height: 2;
+    text-align: center;
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 70px;
+    font-weight: 900;
+}
+
+#botones_unirse_proyectos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.botones{
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    margin-right: 20px;
+}
+
+.botones li{
+    display: inline-block;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+.botones li a{
+    transition:  all 0.3s ease 0s;;
+}
+
+.botones li a:hover{
+    color: #0088a9
+}
+
+button{
+    background-color: rgb(47, 110, 183);
+    color: #ffffff;
+    font-weight: 500;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    box-shadow: rgb(47, 110, 183) 0px 4px 20px;
+}
+
+button:hover{
+    color: #ffffff;
+    background-color: rgba(15, 91, 179, 0.8);
+    box-shadow: rgba(0,136,169,0.8) 0px 4px 20px 2px;
+}
+
+.logo {
+    display: flex;
+    margin-right: auto; /* Esto empuja los siguientes elementos a la derecha */
+    align-items: center;
+}
+
+.logo li{
+   list-style: none;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+
+.contenedor_carrusel{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    padding: 20px;
+    gap: 10px;
+    margin-bottom: 200px;
+}
+
+
+
+.contenedor_proyectos{
+    align-items: center;
+    display: grid;
+    background-color: #1e1f23;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    height: 600px;
+    padding: 10px;
+    width: fit-content;
+
+}
+
+.contenedor_proyectos img{
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 20px;
+}
+
+.contenedor_proyectos p{
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 16px;
+    margin-top: 10px;
+    text-align: center;
+    padding: 0 10px;
+   
+}
+
+h1{
+    color: #ffffff;
+    font-weight: 800;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+
+.proyectos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    border-radius: 10px;
+    gap: 10px;
+    height:310px;
+    background-color: #24252a;
+    color: #ffffff;
+    overflow: hidden;
+    width: fit-content;
+    min-width: 310px;
+    border: solid 1px rgb(0, 0, 0);
+    box-shadow: rgb(10, 13, 15) 0px 4px 20px;
+}
+
+
+.proyectos h3{
+    margin: 0;
+    padding: 0;
+}
+
+
+.proyectos {
+    flex: 0 0 auto;
+    width: 400px;
+    height: 310px;
+    transition: all 0.5s ease;
+    opacity: 0.7;
+    transform: scale(0.85);
+   
+}
+
+
+.proyectos.active {
+    opacity: 1;
+    transform: scale(1);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 30px;
+    
+    /* Aplicamos la animación abrir automáticamente al proyecto activo */
+    animation: 0.25s ease-in-out abrir forwards;
+}
+
+
+
+
+@keyframes abrir {
+    from {
+        height: 400px;
+        margin-top: 0px;
+        transform: scale(1);
+    }
+    to {
+        height: 520px;
+        margin-top: -30px;
+        transform: scale(1.05);
+    }
+}
+
+
+
+
+
+
+
