@@ -61,7 +61,7 @@ header img:hover {
 
 .contenedor {
 
-    background-image: url("blob-scene-haikei.svg");
+    background-image: url("/resources/blob-scene-haikei.svg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
