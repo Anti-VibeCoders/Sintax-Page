@@ -3,11 +3,7 @@
     padding: 0;
 }
 
-body {
-    background-color: #1e1f23;
 
-
-}
 
 
 li,
@@ -36,8 +32,6 @@ header {
     padding: 10px 100px;
     height: 100px;
     background-color: #1e1f23;
-    z-index: 10;
-    /* Aumenta el z-index */
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
     position: fixed;
     width: 100%;
@@ -142,7 +136,6 @@ span {
 
 .botones li a {
     transition: all 0.3s ease 0s;
-    ;
 }
 
 .botones li a:hover {
@@ -183,119 +176,128 @@ button:hover {
 body {
     font-family: "Roboto", sans-serif;
     padding: 0;
-    margin: 0;
-}
-
-
-.contenedor_carrusel {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-    padding: 20px;
-    gap: 10px;
-    margin-bottom: 200px;
-}
-
-
-
-.contenedor_proyectos {
-    align-items: center;
-    display: grid;
     background-color: #1e1f23;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
-    height: 600px;
-    padding: 10px;
+    margin: 0;
+    color: white;
     width: fit-content;
-
+    height: 1lh;
 }
 
-.contenedor_proyectos img {
+
+.category_title{
+    border-bottom: 1px solid;
     width: 300px;
-    height: 200px;
-    border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 20px;
-}
-
-.contenedor_proyectos p {
-    color: #ffffff;
-    font-weight: 500;
-    font-size: 16px;
-    margin-top: 10px;
+    margin: auto;
+    margin-bottom: 30px;
+    border-radius: 1px;
     text-align: center;
-    padding: 0 10px;
-
-}
-
-h1 {
-    color: #ffffff;
-    font-weight: 800;
-    margin-bottom: 20px;
-    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
 }
 
 
+.container_projects{
+    display: grid;
+    gap: 50px;
+    padding: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
 
-.proyectos {
+.projects{
+    position: relative;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 20px;
-    border-radius: 10px;
-    gap: 10px;
-    height: 310px;
-    background-color: #24252a;
-    color: #ffffff;
+    align-items: flex-start;
+    background-color: #1b1b1cd2;
+    color: rgb(255, 255, 255);
+    width: 300px;
+    outline: 1px solid;
+    border-radius: 5px;
+    transition: ease .9s all;
     overflow: hidden;
-    width: fit-content;
-    min-width: 310px;
-    border: solid 1px rgb(0, 0, 0);
-    box-shadow: rgb(10, 13, 15) 0px 4px 20px;
+}  
+
+.projects:hover .overlayProject{
+   top: 35%;
+   border-color: ;
+}
+
+.projects:not(:hover) .overlayProject{
+    top: 100%;
 }
 
 
-.proyectos h3 {
-    margin: 0;
-    padding: 0;
+
+.projects:hover{
+    animation: .8s openBorder forwards;
 }
 
 
-.proyectos {
-    flex: 0 0 auto;
-    width: 400px;
-    height: 310px;
-    transition: all 0.5s ease;
-    opacity: 0.7;
-    transform: scale(0.85);
 
+.projects:hover img{
+    filter: blur(.8px);
+    filter: brightness(1.4px);
 }
 
 
-.proyectos.active {
+
+.overlayProject{
+    position: absolute;
+    width: 300px;
+    height: fit-content;
+    top: 100%;
+    bottom: 0;
+    justify-content: center;
+    background-color: #1e1f23;
     opacity: 1;
-    transform: scale(1);
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 30px;
-
-    /* Aplicamos la animación abrir automáticamente al proyecto activo */
-    animation: 0.25s ease-in-out abrir forwards;
+    border-radius: 12px;
+    align-items: center;
+    transition: ease-in-out .25s all;
 }
 
 
+.buttonsProject{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 20px;
+}
+
+.projects h3{
+    font-weight: 900;
+    font-size: 16px;
+    margin-left: 12px;
+}
+
+.projects p{
+    margin-left: 12px;
+    margin-right: 12px;
+    font-size: 12.5px;
+}
 
 
-@keyframes abrir {
-    from {
-        height: 400px;
-        margin-top: 0px;
-        transform: scale(1);
-    }
+.projects:nth-child(even) {
+  transform: translateY(5rem);
+}
 
-    to {
-        height: 520px;
-        margin-top: -30px;
-        transform: scale(1.05);
-    }
+.projects img{
+    width: 300px;
+}
+
+.headerProject{
+    align-items: center;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.iconsTecnology{
+    display: flex;
+    width: 50px;
+    margin-right: 10px;
+}
+
+.headerProject img{
+    height: 20px;
 }
