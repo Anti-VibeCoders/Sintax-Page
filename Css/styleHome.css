@@ -219,7 +219,6 @@ body {
 
 .projects:hover .overlayProject{
    top: 35%;
-   border-color: ;
 }
 
 .projects:not(:hover) .overlayProject{
