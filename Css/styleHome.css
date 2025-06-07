@@ -193,6 +193,8 @@ body {
     text-align: center;
     margin-top: 30px;
     font-size: 14px;
+    color: rgba(15, 91, 179, 0.8);
+    border-radius: 6px;
 }
 
 
@@ -200,6 +202,8 @@ body {
     display: grid;
     gap: 50px;
     padding: 30px;
+    align-items: center;
+    margin-bottom: 100px;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
@@ -211,9 +215,9 @@ body {
     background-color: #1b1b1cd2;
     color: rgb(255, 255, 255);
     width: 300px;
-    outline: 1px solid;
+    outline: 1px solid #1e1f23;
     border-radius: 5px;
-    transition: ease .9s all;
+    transition: ease .5s all;
     overflow: hidden;
 }  
 
@@ -228,14 +232,15 @@ body {
 
 
 .projects:hover{
-    animation: .8s openBorder forwards;
+    transform: scale(1.1);
+    outline-color: rgba(15, 91, 179, 0.8);
+    box-shadow: rgba(15, 91, 179, 0.8) 0px 0px 10px 1px;
 }
 
 
 
 .projects:hover img{
-    filter: blur(.8px);
-    filter: brightness(1.4px);
+    filter: grayscale(0);
 }
 
 
@@ -248,17 +253,17 @@ body {
     bottom: 0;
     justify-content: center;
     background-color: #1e1f23;
-    opacity: 1;
     border-radius: 12px;
     align-items: center;
     transition: ease-in-out .25s all;
+    padding: 5px;
 }
 
 
 .buttonsProject{
     display: flex;
     justify-content: center;
-    gap: 1rem;
+    gap: 2rem;
     margin-bottom: 20px;
 }
 
@@ -275,13 +280,11 @@ body {
 }
 
 
-.projects:nth-child(even) {
-  transform: translateY(5rem);
+.imgProject{
+    width: 300px;
+    filter: grayscale(1);
 }
 
-.projects img{
-    width: 300px;
-}
 
 .headerProject{
     align-items: center;
@@ -294,6 +297,7 @@ body {
 .iconsTecnology{
     display: flex;
     width: 50px;
+    gap: 15px;
     margin-right: 10px;
 }
 
