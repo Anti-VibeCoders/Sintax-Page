@@ -26,15 +26,16 @@ button:hover {
 }
 
 header {
+    background-color: #000000;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     padding: 10px 100px;
     height: 100px;
-    background-color: #1e1f23;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
     position: fixed;
     width: 100%;
+    z-index: 10;
 }
 
 header img {
@@ -55,8 +56,7 @@ header img:hover {
 
 .contenedor {
 
-    background-image: url("/resources/blob-scene-haikei.svg");
-    background-repeat: no-repeat;
+    background: linear-gradient(180deg, #020d1f, #010817, #010510, #000208, #000104, #000001, #000000, #000000);    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     height: 800px;
@@ -176,7 +176,7 @@ button:hover {
 body {
     font-family: "Roboto", sans-serif;
     padding: 0;
-    background-color: #1e1f23;
+    background-color: #07070b;
     margin: 0;
     color: white;
     width: fit-content;
@@ -192,18 +192,17 @@ body {
     border-radius: 1px;
     text-align: center;
     margin-top: 30px;
-    font-size: 14px;
+    font-size: 18px;
     color: rgba(15, 91, 179, 0.8);
     border-radius: 6px;
 }
-
 
 .container_projects{
     display: grid;
     gap: 50px;
     padding: 30px;
     align-items: center;
-    margin-bottom: 100px;
+    margin-bottom:20px;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
@@ -212,21 +211,29 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    background-color: #1b1b1cd2;
+    background-color: #08080cd2;
     color: rgb(255, 255, 255);
     width: 300px;
     outline: 1px solid #1e1f23;
     border-radius: 5px;
     transition: ease .5s all;
     overflow: hidden;
+    outline: 2px solid rgba(15, 91, 179, 0.8);
 }  
 
+.projects img{
+    width: 300px;
+    height: 180px;
+    filter: grayscale(0);
+}
+
 .projects:hover .overlayProject{
-   top: 35%;
+    transform: translateY(-100%);
 }
 
 .projects:not(:hover) .overlayProject{
-    top: 100%;
+    bottom: auto;
+    filter: grayscale(0);
 }
 
 
@@ -240,7 +247,7 @@ body {
 
 
 .projects:hover img{
-    filter: grayscale(0);
+    filter: grayscale(1);
 }
 
 
@@ -265,18 +272,27 @@ body {
     justify-content: center;
     gap: 2rem;
     margin-bottom: 20px;
+    padding: 0;
+    border-radius: 50%;
+}
+
+.buttonsProject img{
+    height: 20px;
+    width: 20px;
+    margin: 0;
 }
 
 .projects h3{
     font-weight: 900;
     font-size: 16px;
-    margin-left: 12px;
+    margin-left: 12px
 }
 
 .projects p{
     margin-left: 12px;
     margin-right: 12px;
     font-size: 12.5px;
+    margin-bottom: 22px;
 }
 
 
@@ -292,15 +308,122 @@ body {
     display: flex;
     justify-content: space-between;
     gap: 20px;
+    border-top: 1px solid rgba(15, 91, 179, 0.8);
 }
 
 .iconsTecnology{
     display: flex;
-    width: 50px;
-    gap: 15px;
-    margin-right: 10px;
+    max-width: 200px;
+    align-items: center;
+    gap: 7px;
+    padding-inline: 5px;
 }
 
 .headerProject img{
     height: 20px;
+    width: 20px;
 }
+
+#principles{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    width: 90%;
+    gap: 20px;
+}
+
+#principles img{
+    width: 60px;
+    height: 60px;
+}
+
+#principles h3{
+    text-align: center;
+   
+}
+
+.containerQualities{
+    width: 100%;
+    padding-inline: 60px;
+    background-color: #24252a;
+    padding-top: 160px;
+    justify-items: center;
+    padding-bottom: 100px;
+    font-size: 20px;
+    font-weight: 600;
+    background: radial-gradient(circle at 50% 50%, #151b3d, #09091a, #0c0a18, #0b0b0b, #0a0610, #020304, #000000, #000000);
+}
+
+
+.containerQualities h3{
+    border-radius: 8px;
+    padding: 15px;
+    
+}
+
+.grid{
+    display: flex;
+    flex-direction: column;
+    background-color: #07070b;
+    border-radius: 12px;
+    border: .5px solid rgba(15, 91, 179, 0.8);
+    gap: 30px;
+    padding-inline: 30px;
+}
+
+.grid p{
+    font-size: 14px;
+    
+}
+
+.titleGrid{
+   display: flex;
+   height: 10%;
+   align-items: center;
+   justify-content: space-between;
+}
+
+
+    
+#grid1{
+    grid-column: span 2 / span 2;
+    grid-row: span 2 / span 2;
+    height: fit-content;
+    text-align: center;
+    padding: 30px;
+    justify-content: space-between;
+}
+
+#grid2 {
+    grid-row: span 3 / span 3;
+    grid-column-start: 3;
+   
+}
+
+#grid3 {
+    grid-row: span 3 / span 3;
+    grid-column-start: 4;
+   
+}
+
+#grid4 {
+    grid-column: span 3 / span 3;
+    grid-row: span 2 / span 2;
+    grid-column-start: 2;
+    grid-row-start: 4;
+   
+}
+
+#grid5 {
+    grid-column: span 2 / span 2;
+    grid-column-start: 1;
+    grid-row-start: 3;
+
+}
+
+#grid6 {
+    grid-row: span 2 / span 2;
+    grid-column-start: 1;
+    grid-row-start: 4;
+}
+ 
